@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+h3 {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: "Square Peg", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  background-color: #181818;
+  color: #d8d8d8;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 5vw;
+}
+.container h1 {
+  font-size: 2.5em;
+  /* 	margin-bottom: 2em; */
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  font-family: Lora, serif;
+  font-weight: 200;
+}
+.container h1::before {
+  content: "─";
+  margin-right: 0.6em;
+  color: #686868;
+}
+.container h1::after {
+  content: "─";
+  margin-left: 0.6em;
+  color: #686868;
+}
+.boxes {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.boxes:last-child {
+  margin-top: 120px;
+}
+.box {
+  width: 30vw;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 200;
+  padding: 0 4vw 4vw;
+  border-right: 2px;
+  border-left: 0;
+  border-style: solid;
+  /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+  border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+}
+.box:last-child {
+  border-right: 0;
+}
+.box .icon {
+  font-size: 4em;
+  color: #555;
+  margin-bottom: 0.6em;
+}
+.box .icon:hover {
+  color: #d8d8d8;
+}
+.box h2 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 200;
+  line-height: 1em;
+  color: #f2f2f2;
+}
+.box .piece-count {
+  font-style: italic;
+  color: #9f9f9f;
+  margin-bottom: 1.2em;
+  letter-spacing: 1px;
+  font-family: Lora, serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)),
+    url(https://images.unsplash.com/photo-1635703327801-26b6f616dcf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center-top;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  list-style: none;
+  display: inline-block;
+  margin: 15px -15px;
+  position: relative;
+  font-family: "Rancho", cursive;
+  letter-spacing: 0.05em;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px 20px;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #faf9f6;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #ffb347;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  text-decoration: none;
+  color: #ffb347;
+  transition: 0.5s;
+}
+
+/* Banner Content */
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #faf9f6;
+}
+
+.content h1 {
+  font-size: 8vw;
+  margin-top: 80px;
+  font-family: "Square Peg", cursive;
+  font-weight: 200;
+  margin-bottom: -10px;
+}
+/* .content p {
+  font-size: 1.5vw;
+  margin: 0px auto;
+  font-weight: 200;
+  line-height: 25px;
+  font-family: "Albert Sans", sans-serif;
+  font-style: italic;
+} */
+/* Orange bar */
+
+.break {
+  border-top: 8px solid #ffb347;
+  border-bottom: 2px solid #fff;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* Gallery */
+.gallery {
+  height: 500px;
+  width: 500px;
+  margin: 10px auto 0;
+}
+.footer {
+  bottom: 0%;
+  width: 100%;
+  height: 10rem;
+  background: yellow;
+  margin-top: 75px;
+  border-top: 4px solid #fff;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #000;
+  font-family: "Rancho", cursive;
+}
+
+.footer p {
+  margin: 4px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer div:last-of-type {
+  text-align: right;
+}
+
+.footer a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
